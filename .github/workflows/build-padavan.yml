@@ -104,5 +104,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: Padavan-packages
+        name: ttan-RM2100-Padavan-packages
         path: /opt/images

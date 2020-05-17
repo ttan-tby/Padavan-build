@@ -38,7 +38,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: RM2100
+        TNAME: K2P-5.0
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
@@ -104,5 +104,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: ttan-RM2100-Padavan-packages
+        name: ttan-K2P-5.0-Padavan-packages
         path: /opt/images

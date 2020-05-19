@@ -104,5 +104,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: ttan-K2P-5.0-Padavan-packages
+        name: ttan-NEWIFI3-Padavan
         path: /opt/images

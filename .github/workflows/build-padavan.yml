@@ -32,7 +32,7 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev gcc-multilib
     - name: Clone source code
       run: |
-        git clone --depth=1 https://github.com/ttan-tby/rt-n56u.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/ttan-tby/Padavan.git /opt/Padavan
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
@@ -40,7 +40,7 @@ jobs:
       env:
         TNAME: NEWIFI3
       run: |
-        cd /opt/rt-n56u/trunk
+        cd /opt/Padavan/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
         echo "configs/templates/$TNAME.config not found "
         exit 1
@@ -114,5 +114,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: ttan-NEWIFI3-Hanwckf
+        name: ttan-NEWIFI3-yonsm
         path: /opt/images

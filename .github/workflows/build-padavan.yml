@@ -114,5 +114,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: ttan-NEWIFI-Hanwkf
+        name: ttan-NEWIFI-Hanwckf
         path: /opt/images
